@@ -6,7 +6,7 @@ const NoteSchema = new Schema({
   userId: {
     type: Schema.Types.ObjectId,
     ref: 'user'
-  }   
+  },   
  notes: [
     {
       title: {
@@ -14,15 +14,12 @@ const NoteSchema = new Schema({
       },
       tags: {
         
-      }
+      },
       content: {
 
       }
     }
-  ]
-
-
- 
+  ] 
 })
 
 const Note = new model('note', NotesSchema)
